@@ -1,0 +1,11 @@
+title: Memstore
+description: Documents and barebone guides across Linux (debian), Python (pandas, pytorch), and R (data.table).
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-hacker
+google_analytics: [G-W7FTQNCB75]
+show_downloads: false
+url: "localhost:4000"
+exclude:
+  - Gemfile
+  - Gemfile.lock
