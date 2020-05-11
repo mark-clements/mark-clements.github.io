@@ -18,10 +18,10 @@ If you decide to upgrade from the default 'nouveau' open source drivers, to one 
 ```sudo apt-get install linux-image-5.0.0-44-generic linux-headers-5.0.0-44-generic```
 
 ### 3. Modify the bootloader (grub) to use the new kernel by default
-1. Find the $menuentry_id_option for the submenu:
+1. Find the $menuentry_id_option for the submenu:  
 ```grep submenu /boot/grub/grub.cfg```
 
-2. Find the $menuentry_id_option for the menu entry for the kernel you want to use:
+2. Find the $menuentry_id_option for the menu entry for the kernel you want to use:  
 ```grep gnulinux /boot/grub/grub.cfg```
 
 3. Comment out your current default grub in /etc/default/grub and replace it with the sub-menu's $menuentry_id_option from step one, and the selected kernel's $menuentry_id_option from step two separated by >
@@ -43,4 +43,4 @@ https://www.digitalocean.com/docs/droplets/how-to/kernel/use-non-default/
 https://unix.stackexchange.com/questions/198003/set-default-kernel-in-grub
 
 
-[back](./)
+[Back](./)

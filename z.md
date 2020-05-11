@@ -10,19 +10,19 @@ Linux offers some versatile tools which can save you a lot of time. Here is a sh
 
 Installation steps:  
 
-1. Download the script to your home folder:
+1. Download the script to your home folder:  
 ```wget https://raw.githubusercontent.com/rupa/z/master/z.sh -O ~/z.sh```
-2. Add to .bashrc for ease-of-use:
+2. Add to .bashrc for ease-of-use:  
 ```sudo ln -s ~/bin/z.sh /usr/local/bin/z```
-3. Make sure the script is executable
+3. Make sure the script is executable  
 ``` chmod u+x z.sh```
-4. Open the terminal and cd to some of your most commonly used directories, for example:
+4. Open the terminal and cd to some of your most commonly used directories, for example:  
 ```cd /some/very/long/path/i/keep/typing/here```
-5. Now try typing:
+5. Now try typing:  
 ```z here```
 
-z should now autocomplete your full path for you! Learn more at the [Project home:] (https://github.com/rupa/z)
+z should now autocomplete your full path for you! Learn more at the [project's github](https://github.com/rupa/z)
 
-[back](./)
+[Back](./)
 
 

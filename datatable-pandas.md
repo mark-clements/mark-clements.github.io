@@ -4,8 +4,8 @@ title: Updating Linux Kernel
 ---
 
 # R data.table - Python Pandas Correspondance Table
-For those who know one package or both, and just can't find the right syntax. Disclaimer, some of these were jotted down from memory, so they might not all work as expected.   
+For those who know one package or both, and just can't find the right syntax. Disclaimer, some of these were jotted down from memory, so they might not all work as expected. It will get revisions, so it *should* get better.    
 
 <script src="https://gist.github.com/mark-clements/b2a53ca2894c5df93fcc63e578b0336c.js"></script>
 
-[back](./)
+[Back](./)

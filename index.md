@@ -2,14 +2,17 @@
 layout: default
 ---
 
+# Launching Linux scripts the easy way 
+[Adding .sh scripts to your system path](./quickstart.html)  - <small>2020-05-11</small>
+
 # R Data.Table to Pandas
-[My correspondance table cheatsheet](./datatable-pandas.html) - <small>2020-05-07</small>
+[A correspondance table](./datatable-pandas.html) - <small>2020-05-04</small>
 
 # Nvidia Compatibility on Linux...
-[Setting the right Linux Kernel for Nvidia drivers](./kernel.html) - <small>2020-04-30</small>
+[Setting the right Linux Kernel for Nvidia drivers](./kernel.html) - <small>2020-04-27</small>
 
 # Z File Path Autocomplete
-[Less tab typing file paths is good right?](./z.html) - <small>2020-04-23</small>
+[Less tab typing file paths is good right?](./z.html) - <small>2020-04-20</small>
 
 <!---
 # I Broke Linux
