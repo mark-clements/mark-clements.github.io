@@ -16,7 +16,7 @@ Should show an image called "postgres"
 
 - Make a note of the Image ID, needed for the next step
 
-### 3) Create persistent data volume container
+### 3) Create a persistent data volume container
 
 ```sudo docker create -v /var/lib/postgresql/data --name <my_postgres_volume><image_ID>```   
 E.g.
@@ -26,17 +26,17 @@ sudo docker create -v /var/lib/postgresql/data --name my_postgres_volume cf879a4
 ```sudo docker volume ls```   
 ```sudo docker volume inspect```
 
-### 5) Check that the w container <my_postgres..> with
-```sudo docker container ps -a```
+You can check that the container and volume exist with:   
+```sudo docker container ps -a```   
 ```sudo docker container inspect my_postgres_volume```
 
-### 6)  run the PostreSQL container
-sudo docker run --name postgres \
--p 5432:5432 \
--e POSTGRES_PASSWORD=password \
--e POSTGRES_USER=myusername \
--e POSTGRES_DB=my_postgres_db \
--d --volumes-from my_postgres_volume postgres
+### 6)  Run the PostreSQL container
+sudo docker run --name postgres \   
+-p 5432:5432 \   
+-e POSTGRES_PASSWORD=password \   
+-e POSTGRES_USER=myusername \   
+-e POSTGRES_DB=my_postgres_db \   
+-d --volumes-from my_postgres_volume postgres   
 
 > Note: if you receive the error 'container already exists' try deleting the stock container named 'postgres' with ```sudo docker rm <containerid>```
 
@@ -58,8 +58,7 @@ E.g.
 
 ### 11) Edit the file   
 ```vi postgresql.conf```   
-Check that the listen_addresses is set to '*':
-```listen_addresses='*'```
+Check that the listen_addresses is set to '*': E.g. *listen_addresses='*'*   
 
 ### 12) Edit pg_hba.conf  
 ```vi pg_hba.conf```   
