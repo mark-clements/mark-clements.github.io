@@ -27,8 +27,8 @@ If you decide to upgrade from the default 'nouveau' open source drivers, to one 
 3. Comment out your current default grub in /etc/default/grub and replace it with the sub-menu's $menuentry_id_option from step one, and the selected kernel's $menuentry_id_option from step two separated by >
 
 e.g. in my case these were:  
-```#GRUB_DEFAULT=0```
-``` GRUB_DEFAULT="gnulinux-advanced-462c8c72-e1e1-4f65-a1ce-fd4fdee4644b>gnulinux-5.0.0-44-generic-advanced-462c8c72-e1e1-4f65-a1ce-fd4fdee4644b"```
+Comments out original line: ```#GRUB_DEFAULT=0```  
+Add new line: ``` GRUB_DEFAULT="gnulinux-advanced-462c8c72-e1e1-4f65-a1ce-fd4fdee4644b>gnulinux-5.0.0-44-generic-advanced-462c8c72-e1e1-4f65-a1ce-fd4fdee4644b"```
 
 4. Update grub
 ```sudo update-grub```
