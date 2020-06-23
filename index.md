@@ -2,6 +2,9 @@
 layout: default
 ---
 
+# Simple Postgresql Database on AWS EC2 with Docker     
+[When RDS is overkill](./postgres_docker.html)  - <small>2020-06-23</small>
+
 # Launching Linux scripts the easy way 
 [Adding .sh scripts to your system path](./quickstart.html)  - <small>2020-05-11</small>
 

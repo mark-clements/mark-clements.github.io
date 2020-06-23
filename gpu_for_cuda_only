@@ -1,0 +1,29 @@
+## Use Integrated Graphics Chip to Minimize nvidia GPU overhead for CUDA: Configure iGPU
+
+#### Create /etc/X11/xorg.conf and add  
+
+```
+Section "Device"
+    Identifier      "intel"
+    Driver          "intel"
+    BusId           "PCI:0:2:0"
+EndSection
+
+Section "Screen"
+    Identifier      "intel"
+    Device          "intel"
+EndSection
+```
+
+Note: ensure your GPU is at the BusID location
+#### 
+> lspci  | grep VGA
+00:02.0 VGA compatible controller: Intel Corporation Device 3e92
+01:00.0 VGA compatible controller: NVIDIA Corporation GP104 (rev a1)
+
+#### Reboot  
+Enter
+> nvidia-smi
+
+You should no longer see other programs appear in the output.
+
